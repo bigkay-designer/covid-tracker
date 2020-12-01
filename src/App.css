@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #f7f7f7;
+}
+
+.App{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 25px;
+}
+
+
+.app__mainSec {
+  flex: 0.9;
+}
+.app__header{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app__header h1{
+  color: rgb(247, 54, 54);
+}
+.app__infobox{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.InfoBox__main{
+  flex: 1 1;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.InfoBox--selected{
+  border-top: 10px solid greenyellow;
+}
+
+.InfoBox--red{
+  border-color:red;
+}
+.InfoBox__cases{
+  color: red;
+}
+.InfoBox--cases{
+  color: 10px solid greenyellow !important; 
+}
+
+.InfoBox--cases--green{
+  color:rgb(136, 219, 11);
+}
+
+@media (max-width: 920px){
+  .App{
+    flex-direction: column;
+  }
+}
+
+.lineGraph{
+  margin: 30px 0 20px;
+}
+.lineGraph-container{
+  height: 270px;
+}
